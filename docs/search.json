@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "EffectiveStatistician.html",
+    "href": "EffectiveStatistician.html",
+    "title": "Virtual Population Summary",
+    "section": "",
+    "text": "Thank you for viewing an example report created for the Effective Statistician conference.\nClients come to Exploristics with highly bespoke issues that require innovative and novel clinical trial designs to achieve their goals. Our Statistical Consultants need to produce bespoke data visualisations and reports. The Virtual Population Visualization application was designed to provide a flexible approach for creating data visualisations whilst streamlining workflows and producing consistent & professional plots."
+  },
+  {
+    "objectID": "EffectiveStatistician.html#welcome",
+    "href": "EffectiveStatistician.html#welcome",
+    "title": "Virtual Population Summary",
+    "section": "",
+    "text": "Thank you for viewing an example report created for the Effective Statistician conference.\nClients come to Exploristics with highly bespoke issues that require innovative and novel clinical trial designs to achieve their goals. Our Statistical Consultants need to produce bespoke data visualisations and reports. The Virtual Population Visualization application was designed to provide a flexible approach for creating data visualisations whilst streamlining workflows and producing consistent & professional plots."
+  },
+  {
+    "objectID": "EffectiveStatistician.html#example-project",
+    "href": "EffectiveStatistician.html#example-project",
+    "title": "Virtual Population Summary",
+    "section": "Example Project",
+    "text": "Example Project\n\n\n\n\n\n\n\n\nKerusCloud allows you to create realistic virtual population data with up to 20,000 patients, 10,000 simulations and over 250,000 scenarios.\nKerusCloud also allows multiple study design options and decision criteria.\n\n\n\nThis is an example of a Vaccine trial, across several countries, low-incidence rate - so need to recruit large number of patients across multiple countries.\nUsing KerusCloud we simulated Virtual Populations with recruitment sites in 4 different countries, baseline patient data and repeated measure & time to event variables of disease occurrence."
+  },
+  {
+    "objectID": "EffectiveStatistician.html#patient-recruitment",
+    "href": "EffectiveStatistician.html#patient-recruitment",
+    "title": "Virtual Population Summary",
+    "section": "Patient Recruitment",
+    "text": "Patient Recruitment\nIn this particular clinical trial example patient recruitment is a a key factor to the success or failure. With a rare disease, the vaccine will need to be administered to a large number of people and potentially on a longer duration.\nOptimising the clinical trial design whilst considering patient recruitment, duration in addition to statistical properties increases the likelihood of success, reduces the cost, and gets a vaccine to patients that urgently need it sooner - saving lives!\n\n\n\n\n\n\n\n\nKerusCloud allows for up to 10 recruitment sites allows you to modify recruitment rates between sites and over time.\nIn addition you can add a cap to set the maximum number of patients recruited from specific site(s). This allows you to highly customise your recruitment strategies!\n\n\n\n\nRecruitment Sites\nIn this example we have 4 recruitment sites in 4 different countries in Africa. Maps are always a good introductory visualisation as they set the geographical context of a project and provide an indication of the scope of a project.\n\n\nCode\n# Load the library.\nlibrary(leaflet)\n\n# Make a map\nleaflet() %&gt;%\n  addTiles() %&gt;% # Add default OpenStreetMap map tiles\n  addMarkers(lng = c(9.0820, 30.55, 7.54, 17.607), lat = c(8.6753, -22.93, 5.554, -8.08), popup = c(\"Site A\", \"Site B\", \"Site C\", \"Site D\"))\n\n\n\n\n\n\n\n\nRecruitment Profile\n\nRecruitment SiteRecruitment Profile\n\n\nA waffle plot can tell us how many patients we’re recruiting from individual sites which is useful for logistical planning.\n\n\n\n\n\n\n\nIncluding time into our recruitment profile allows us to know how long a clinical trial will take and allowing planning of interim analyses or alternative study designs such as group sequential."
+  },
+  {
+    "objectID": "EffectiveStatistician.html#timeline",
+    "href": "EffectiveStatistician.html#timeline",
+    "title": "Virtual Population Summary",
+    "section": "Timeline",
+    "text": "Timeline\nA visualisation such as a ganntt chart can provide a excellent summary of the project. It provides a context of the expected time of the trial and allows identification of any operational issues that may arise."
+  },
+  {
+    "objectID": "EffectiveStatistician.html#simulating-data",
+    "href": "EffectiveStatistician.html#simulating-data",
+    "title": "Virtual Population Summary",
+    "section": "Simulating Data",
+    "text": "Simulating Data\n\nDistribution based variablesCorrelation MatrixMissing data\n\n\nKerusCloud generates simulated data based up to 17 difference distribution types and allows distribution parameters to be defined in strafed approach, allowing highly precise representations of data.\n\n\n\nKerusCloud using over 100 general additive models to ensure the relationships between data are achieved. A correlation matrix provides a summary of these relationships and allows statisticians to sense check if their model assumptions are correct.\n\n\n\n\n\n\n\nIn the real world, trials aren’t as perfect as simulations patients will drop-out over time and accounting for this allows a trial to be de-risked. An upset plot is a good visualisation to see the overlap between different variables. Here as we’re getting missingness due to drop-outs we expect an overlap in missingness over time - if someone drops out early in the trial, they’re be missing for repeated measures."
+  },
+  {
+    "objectID": "EffectiveStatistician.html#benefits",
+    "href": "EffectiveStatistician.html#benefits",
+    "title": "Virtual Population Summary",
+    "section": "Benefits",
+    "text": "Benefits\nUsing the Virtual Population Visualisation allows you to optimise your workflow and reduce the time required to get the data visualisation aligned with the story and automates the process of aligning your theme to your plots.\nThis provides the flexibility to produce PowerPoint slides aligned with your organisational corporate templates and colour palettes or download the reproducible scripts to embed within a quarto presentation such as this one!"
+  },
+  {
+    "objectID": "EffectiveStatistician.html#more-information",
+    "href": "EffectiveStatistician.html#more-information",
+    "title": "Virtual Population Summary",
+    "section": "More Information",
+    "text": "More Information"
+  }
+]

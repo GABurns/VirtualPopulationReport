@@ -1,0 +1,7 @@
+project:
+  title: "Effective Statistician Report"
+  type: website
+  output-dir: docs
+
+editor: visual
+

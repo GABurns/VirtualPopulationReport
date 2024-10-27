@@ -1,0 +1,123 @@
+---
+title: "Virtual Population Summary"
+subtitle: "An example of a report generated using graphs from the Virtual Population Visualisation from KerusCloud"
+format:
+  lumo-html: 
+    logo: "logo.jpeg"                          
+    primary-color: "#b5cef7"
+    self-contained: true
+    is-particlejs-enabled: true 
+author: Gareth Burns
+date: last-modified
+---
+
+## Welcome!
+
+<div>
+
+::: {style="float: left; position: relative; top: 0px; padding: 30px;"}
+![](VPV-logo.png){fig-align="left"}
+:::
+
+Thank you for viewing an example report created for the Effective Statistician conference.
+
+Clients come to Exploristics with highly bespoke issues that require innovative and novel clinical trial designs to achieve their goals. Our Statistical Consultants need to produce bespoke data visualisations and reports. The Virtual Population Visualization application was designed to provide a flexible approach for creating data visualisations whilst streamlining workflows and producing consistent & professional plots.
+
+</div>
+
+## Example Project
+
+::: column-margin
+::: callout
+**KerusCloud** allows you to create realistic virtual population data with up to 20,000 patients, 10,000 simulations and over 250,000 scenarios.
+
+KerusCloud also allows multiple study design options and decision criteria.
+:::
+:::
+
+This is an example of a Vaccine trial, across several countries, low-incidence rate - so need to recruit large number of patients across multiple countries.
+
+Using KerusCloud we simulated Virtual Populations with [recruitment sites]{.highlight} in 4 different countries, [baseline patient data]{.highlight} and [repeated measure]{.highlight} & [time to event]{.highlight} variables of disease occurrence.
+
+## Patient Recruitment
+
+In this particular clinical trial example patient recruitment is a a key factor to the success or failure. With a rare disease, the vaccine will need to be administered to a large number of people and potentially on a longer duration.
+
+Optimising the clinical trial design whilst considering patient recruitment, duration in addition to statistical properties increases the likelihood of success, reduces the cost, and gets a vaccine to patients that urgently need it sooner - saving lives!
+
+::: column-margin
+::: callout
+KerusCloud allows for up to 10 recruitment sites allows you to [modify recruitment rates]{.highlight} between [sites]{.highlight} and over [time]{.highlight}.
+
+In addition you can add a cap to set the maximum number of patients recruited from specific site(s). This allows you to highly customise your recruitment strategies!
+:::
+:::
+
+### Recruitment Sites
+
+In this example we have 4 recruitment sites in 4 different countries in Africa. Maps are always a good introductory visualisation as they set the geographical context of a project and provide an indication of the scope of a project.
+
+```{r}
+#| column: screen
+#| out-width: 100%
+
+# Load the library.
+library(leaflet)
+
+# Make a map
+leaflet() %>%
+  addTiles() %>% # Add default OpenStreetMap map tiles
+  addMarkers(lng = c(9.0820, 30.55, 7.54, 17.607), lat = c(8.6753, -22.93, 5.554, -8.08), popup = c("Site A", "Site B", "Site C", "Site D"))
+```
+
+### Recruitment Profile
+
+::: {.panel-tabset .nav-pills}
+### Recruitment Site
+
+A waffle plot can tell us how many patients we're recruiting from individual sites which is useful for logistical planning.
+
+![](Wafffle.png){fig-align="left"}
+
+### Recruitment Profile
+
+Including time into our recruitment profile allows us to know how long a clinical trial will take and allowing planning of interim analyses or alternative study designs such as group sequential.
+
+![](Recruitment%20Profile%203.png)
+:::
+
+## Timeline
+
+A visualisation such as a ganntt chart can provide a excellent summary of the project. It provides a context of the expected time of the trial and allows identification of any operational issues that may arise.
+
+![](gantt.png)
+
+## Simulating Data
+
+::: {.panel-tabset .nav-pills}
+### Distribution based variables
+
+KerusCloud generates simulated data based up to 17 difference distribution types and allows distribution parameters to be defined in strafed approach, allowing highly precise representations of data.
+
+![](animation.gif)
+
+### Correlation Matrix
+
+KerusCloud using over 100 general additive models to ensure the relationships between data are achieved. A correlation matrix provides a summary of these relationships and allows statisticians to sense check if their model assumptions are correct.
+
+![](correlation.png){fig-align="left"}
+
+### Missing data
+
+In the real world, trials aren't as perfect as simulations patients will drop-out over time and accounting for this allows a trial to be de-risked. An upset plot is a good visualisation to see the overlap between different variables. Here as we're getting missingness due to drop-outs we expect an overlap in missingness over time - if someone drops out early in the trial, they're be missing for repeated measures.
+:::
+
+## Benefits
+
+Using the Virtual Population Visualisation allows you to optimise your workflow and reduce the time required to get the data visualisation aligned with the story and automates the process of aligning your theme to your plots.
+
+This provides the flexibility to produce PowerPoint slides aligned with your organisational corporate templates and colour palettes or download the reproducible scripts to embed within a `quarto` presentation such as this one!
+
+## More Information
+
+![](Kerus-Landscape.png){fig-align="left"}
